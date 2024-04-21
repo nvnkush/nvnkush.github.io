@@ -4,5 +4,5 @@ serve as a Senior Process Engineer at Dr. Reddy's Laboratory, where I utilize my
 related to fluid flow, process development, scale-up, and design. My work revolves around the application of 
 Chemical Engineering principles, as well as Computational and Mathematical Modeling.
 
-https://www.youtube.com/@nav-kush
+https://www.youtube.com/@nav-kush /n
 https://www.linkedin.com/in/nvnkush/
