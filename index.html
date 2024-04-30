@@ -22,7 +22,31 @@
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">Publications</a></li>
 						<li><a href="#three">Things I can do</a></li>
-						<li><a href="#four">Resume</a></li>
+						<style>
+							@keyframes changeColor {
+							  0% { background-color: #3498db; } /* Start color */
+							  25% { background-color: #e74c3c; } /* Change to red */
+							  50% { background-color: #2ecc71; } /* Change to green */
+							  75% { background-color: #f39c12; } /* Change to orange */
+							  100% { background-color: #3498db; } /* Back to start color */
+							}
+						  
+							.animated-button {
+							  animation: changeColor 10s infinite;
+							  color: white; /* Change the text color for better contrast */
+							  border: none; /* Optionally, remove the button border */
+							  padding: 10px 20px; /* Adjust padding for better appearance */
+							  font-size: 16px;
+							  cursor: pointer; /* Show pointer cursor on hover */
+							  border-radius: 5px; /* Optionally, add border radius for rounded corners */
+							}
+						  </style>
+						  
+						  <li><button onclick="window.open('Resume.pdf', '_blank')" class="animated-button">Resume</button></li>
+						  
+						  
+
+
 						
 					</ul>
 				</nav>
@@ -215,15 +239,7 @@
 								</div>
 							</section>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Resume</h3>
-									<p><a href="assets/Naveen Kushwaha Resume.pdf">Resume</a></p>
-									
-								</div>
-							</section>
-
+						
 					</div>
 
 				<!-- Footer -->
