@@ -1,267 +1,204 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Naveen Kushwaha</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload" >
-		
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <title>Dr. Naveen Kushwaha | Chemical Engineer & CFD Specialist</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-		<!-- Header -->
-			<section id="header" style="background-color: rgb(45, 30, 42);">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Dr. Naveen Kushwaha</a></h1>
-					<p>PhD (Chemical Engineering, IIT Roorkee)<br />
-					</p>
-				</header>
-				<nav id="nav" style="background-color: rgb(51, 49, 42);">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Publications</a></li>
-						<li><a href="#three">Things I can do</a></li>
-						<style>
-							@keyframes changeColor {
-							  0% { background-color: #3498db; } /* Start color */
-							  25% { background-color: #e74c3c; } /* Change to red */
-							  50% { background-color: #2ecc71; } /* Change to green */
-							  75% { background-color: #f39c12; } /* Change to orange */
-							  100% { background-color: #3498db; } /* Back to start color */
-							}
-						  
-							.animated-button {
-							  animation: changeColor 10s infinite;
-							  color: white; /* Change the text color for better contrast */
-							  border: none; /* Optionally, remove the button border */
-							  padding: 10px 20px; /* Adjust padding for better appearance */
-							  font-size: 16px;
-							  cursor: pointer; /* Show pointer cursor on hover */
-							  border-radius: 5px; /* Optionally, add border radius for rounded corners */
-							}
-						  </style>
-						  
-						  <li><button onclick="window.open('Resume.pdf', '_blank')" class="animated-button">Resume</button></li>
-						  
-						  
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col md:flex-row min-h-screen">
 
+    <aside class="w-full md:w-80 bg-slate-900 text-white md:fixed md:h-screen flex flex-col justify-between shrink-0 z-50">
+        <div class="p-8 text-center md:text-right">
+            <div class="mb-6 relative group">
+                <img src="images/avatar.jpg" alt="Dr. Naveen Kushwaha" 
+                     class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-slate-700 mx-auto md:ml-auto object-cover shadow-lg group-hover:border-blue-500 transition-colors duration-300">
+            </div>
+            
+            <h1 class="text-2xl font-bold tracking-tight">Dr. Naveen Kushwaha</h1>
+            <p class="text-slate-400 mt-2 text-sm uppercase tracking-wider">PhD, Chemical Engineering<br>IIT Roorkee</p>
+            
+            <div class="mt-6">
+                <button onclick="window.open('Resume.pdf', '_blank')" 
+                        class="bg-blue-600 hover:bg-blue-500 text-white py-2 px-6 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 flex items-center gap-2 mx-auto md:ml-auto md:mr-0">
+                    <i class="fas fa-file-pdf"></i> Download Resume
+                </button>
+            </div>
+        </div>
 
-						
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="http://www.youtube.com/@nav-kush" target="_blank" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
-						<li><a href="http://www.linkedin.com/in/nvnkush" target="_blank" class="icon brands fa-linkedin"><span class="label">Linked</span></a></li>
+        <nav class="flex-grow flex flex-col justify-center px-8 text-center md:text-right space-y-4">
+            <a href="#about" class="text-slate-300 hover:text-white hover:translate-x-[-5px] transition-transform block text-lg">About Me</a>
+            <a href="#experience" class="text-slate-300 hover:text-white hover:translate-x-[-5px] transition-transform block text-lg">Experience</a>
+            <a href="#publications" class="text-slate-300 hover:text-white hover:translate-x-[-5px] transition-transform block text-lg">Publications</a>
+            <a href="#portfolio" class="text-slate-300 hover:text-white hover:translate-x-[-5px] transition-transform block text-lg">Simulations</a>
+        </nav>
 
-						
-					</ul>
-				</footer>
-				
-			</section>
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <div class="p-8 text-center md:text-right">
+            <div class="flex justify-center md:justify-end space-x-4 mb-4">
+                <a href="http://www.linkedin.com/in/nvnkush" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-[#0077b5] transition-colors">
+                    <i class="fab fa-linkedin-in text-white"></i>
+                </a>
+                <a href="http://www.youtube.com/@nav-kush" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-[#FF0000] transition-colors">
+                    <i class="fab fa-youtube text-white"></i>
+                </a>
+            </div>
+            <p class="text-xs text-slate-600">&copy; Dr. Naveen Kushwaha</p>
+        </div>
+    </aside>
 
-				<!-- Main -->
-					<div id="main" >
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Naveen Kushwaha</h2>
-										<p>PhD (Chemical Engineering, IIT Roorkee)  </p>
-									
-        </header>
-        <section>
-            <p>Dynamic professional with a doctoral degree in Chemical Engineering and over 5 years of research experience in fluid dynamics, heat transfer, and particles flow dynamics. Currently serving as a Senior Process Engineer at Dr. Reddy's Laboratory, specializing in Computational Fluid Dynamics (CFD) models for optimizing pharmaceutical manufacturing processes.</p>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <p><strong>Senior Process Engineer (Feb. 2023 - Present)</strong><br>Dr. Reddy’s Laboratory, Hyderabad, INDIA<br> </p>
-            <ul>
-                <li>Developing Computational Fluid Dynamics (CFD) models for optimizing various manufacturing processes.</li>
-                <li>Collaborating with cross-functional teams to drive process improvement initiatives.</li>
-                <li>Utilizing the Discrete Element Method (DEM) approach for developing particle dynamics models.</li>
-                <li>Conducting case studies both in the laboratory and at plant scale.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>PhD (Chemical Engineering), Indian Institute of Technology, Roorkee, India, Dec 2017 - Jan 2023</li>
-                <li>M.Tech (Chemical Engineering), Indian Institute of Technology, Roorkee, India, 2015 - 2017</li>
-                <li>B.E. (Chemical Engineering), Institute of Engineering, Jiwaji University, Gwalior, India, 2010 - 2014</li>
-            </ul>
-        </section>
+    <main class="flex-grow md:ml-80 p-6 md:p-12 max-w-5xl mx-auto">
         
-        <!-- Add sections for Projects, Fellowships and Awards, Publications, Conferences, Grants, Skills, Equipment Handling, Services, etc. -->
-        <section>
-            <h2>Fellowships and Awards</h2>
-            <ul>
-                <li>Mitacs globalink research award 2021</li>
-                <li>The ministry of human resource development (MHRD), India fellowship at Indian Institute of Technology, Roorkee in PhD (Dec 2018 to Dec 2022).</li>
-                <li>The ministry of human resource development (MHRD), India fellowship at Indian Institute of Technology, Roorkee during M. Tech. (July 2015 to Jun 2017).</li>
-                <li>Team leader in “Vigyan Manthan-Mission Excellence Programme” organized by M.P. council of science and technology, Bhopal, India during 27th January to 6th February 2008.</li>
-                <li>All India rank two (silver medal) in all India computer knowledge competition organized by national research institute of knowledge development, Chennai, India, 2005.</li>
-            </ul>
+        <section id="about" class="mb-20 pt-10">
+            <div class="w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl mb-10 relative">
+                <img src="images/banner.jpg" alt="Research Banner" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent flex items-end p-8">
+                    <h2 class="text-white text-3xl md:text-4xl font-bold">Bridging Fluid Dynamics & Pharma</h2>
+                </div>
+            </div>
+
+            <h2 class="text-4xl font-bold text-slate-800 mb-6 border-b-4 border-blue-500 inline-block">Introduction</h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                Dynamic professional with a doctoral degree in Chemical Engineering and over 5 years of research experience in <strong>fluid dynamics, heat transfer, and particle flow dynamics</strong>. 
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                Currently serving as a <strong>Senior Process Engineer at Dr. Reddy's Laboratories</strong>, specializing in Computational Fluid Dynamics (CFD) models for optimizing pharmaceutical manufacturing processes. My work bridges the gap between theoretical modeling and industrial application.
+            </p>
+            
+            <div class="mt-8">
+                <h3 class="text-sm font-bold uppercase text-slate-400 tracking-wider mb-3">Core Competencies</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-semibold">ANSYS Fluent</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-semibold">ANSYS Rocky (DEM)</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-md text-sm font-semibold">OpenFOAM</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-md text-sm font-semibold">Python & MATLAB</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-md text-sm font-semibold">SpaceClaim</span>
+                    <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-md text-sm font-semibold">Rheometry</span>
+                </div>
+            </div>
         </section>
-             <!-- Add sections for Conferences, Grants, Skills, Equipment Handling, Services, etc. -->
-        <section>
-            <h2>Skills</h2>
-				<div class="container">
-            		<ul class="feature-icons">
-						<li class="icon solid fa-code">ANSYS FLUENT</li>
-						<li class="icon solid fa-cubes">ANSYS ROCKY</li>
-						<li class="icon solid fa-book">OpenFOAM</li>
-						<li class="icon solid fa-code">MATLAB</li>
-						<li class="icon solid fa-bolt">SpaceClaim</li>
-						<li class="icon solid fa-code">Python</li>
-					</ul>
-                	
+
+        <section id="experience" class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center">
+                <i class="fas fa-briefcase mr-3 text-blue-500"></i> Experience
+            </h2>
+            
+            <div class="border-l-4 border-slate-200 ml-3 space-y-10 pl-8 relative">
+                <div class="relative">
+                    <span class="absolute -left-[42px] top-1 h-5 w-5 rounded-full border-4 border-white bg-blue-500"></span>
+                    <h3 class="text-xl font-bold text-slate-800">Senior Process Engineer</h3>
+                    <p class="text-blue-600 font-medium mb-2">Dr. Reddy’s Laboratories, Hyderabad | Feb 2023 - Present</p>
+                    <ul class="list-disc list-outside ml-4 text-slate-600 space-y-2">
+                        <li>Developing Computational Fluid Dynamics (CFD) models for optimizing manufacturing processes.</li>
+                        <li>Utilizing Discrete Element Method (DEM) for particle dynamics models.</li>
+                        <li>Driving cross-functional process improvement initiatives.</li>
+                        <li>Conducting case studies at both laboratory and plant scale.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <!-- Add sections for Equipment Handling, Services, etc. -->
-        <section>
-            <h2>Equipment Handling</h2>
-            <ul>
-                <li>Rheometer (Anton Par MCR702)</li>
-                <li>HPLC (Waters)</li>
-                <!-- Add other equipment -->
-            </ul>
+
+        <section id="education" class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center">
+                <i class="fas fa-graduation-cap mr-3 text-blue-500"></i> Education
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="text-sm text-slate-400 mb-1">2017 - 2023</div>
+                    <h3 class="text-lg font-bold text-slate-800">PhD, Chemical Engineering</h3>
+                    <p class="text-slate-600">Indian Institute of Technology, Roorkee</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                    <div class="text-sm text-slate-400 mb-1">2015 - 2017</div>
+                    <h3 class="text-lg font-bold text-slate-800">M.Tech, Chemical Engineering</h3>
+                    <p class="text-slate-600">Indian Institute of Technology, Roorkee</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 md:col-span-2">
+                    <div class="text-sm text-slate-400 mb-1">2010 - 2014</div>
+                    <h3 class="text-lg font-bold text-slate-800">B.E., Chemical Engineering</h3>
+                    <p class="text-slate-600">Institute of Engineering, Jiwaji University, Gwalior</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Services</h2>
-            <ul>
-                <li>DAPC member at Department of Chemical Engineering, IIT Roorkee (2018-2019)</li>
-                <li>Reviewer in “Energy Conversion and Management” journal</li>
-                <!-- Add other services -->
 
-								</div>
-							</section>
-						
-						</section>
-						</section>
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h2>Publications</h2>
-									<section>
-										<h3>Patents</h3>
-										<ul>
-											<li>Kushwaha, N., Kumar, V., <b><i>"Twisted Elliptical Tube-In-Tube Helically Coiled Heat Exchangers. Indian Institute of Technology Roorkee, (Class: 23–03; Filed on: 10.09.2022; File number: 370616-001; Granted on: 25.01.2023)."</i></b></li>
-											<li>Kushwaha, N., Silori, G., Kumar., V. 2021.<b><i>"A system and method for extracting shikimic acid from Chir pine needles. Application number 202111038776 dated 26.08.2021 (Published on 22/07/2022)."</i></b></li>
-										</ul>
-									
-									</section>
-									<section>
-										<h3>Projects</h3>
-										<ul>
-											<li>Design Innovation centre (DIC) IIT Roorkee P2P project entitled <i>“Investigation of a Himalayan pine species as a potential drug in the treatment of Swine flu (H1N1)”.</i> Project Id-DIC-P2P-2018-19-05.</li>
-										</ul>
-									
-									</section>
-									<section>
-										<h3>Journal Articles</h3>
-										<ul>
-											<li><b>Kushwaha N</b>, Vikash, Kumar V. “Impact of Mixed Convective and Radiative Heat Transfer in Spiral-Coiled Tubes”. ASME. J. Heat Transfer. 2019; <label style="color:rgb(55, 0, 255);"><a href="https://doi.org/10.1115/1.4043946">https://doi.org/10.1115/1.4043946</a>.
-											<li><b>Kushwaha N</b>, Kumawat T, Nigam K, Kumar V "Heat Transfer and Fluid Flow Characteristics for Newtonian and Non-Newtonian Fluids in a Tube-in-Tube Helical Coil Heat Exchanger" Ind. Eng. Chem. Res. 2020, 59, 9, 3972–3984; <label style="color:rgb(55, 0, 255);"><a href ="https://doi.org/10.1021/acs.iecr.9b07044">https://doi.org/10.1021/acs.iecr.9b07044</a></label>
-											<li><b>Kushwaha N</b>, Kumar V. “Numerical Study of Saturated Boiling Heat Transfer over the Flat and Curved Surfaces”. Heat Transfer <label style="color:rgb(55, 0, 255);"><a href="https://doi.org/10.1002/htj.22640"></a>  (https://doi.org/10.1002/htj.22640)</a></label>
-											<li><b>Kushwaha N</b>, Kumar V. "Impact of Coil Curvature, Pitch, and Orientation on Vapor Hydrodynamics over Helically Coiled Tubes during Saturated Pool Boiling near Critical Pressure". Industrial & Engineering Chemistry Research, ACS<label style="color:rgb(55, 0, 255);"><a href="https://doi.org/10.1021/acs.iecr.3c02629"></a>  (https://doi.org/10.1021/acs.iecr.3c02629)</a></label>
-											<li><b>Kushwaha N</b>, Sasmito, A.P., Kumar V “Vapour Bubble Dynamics and Heat Transfer Characteristics During the Boiling over the Spherical Surface” Heat Transfer <label style="color:rgb(55, 0, 255);"><a href ="https://doi.org/10.1002/htj.22727">https://doi.org/10.1002/htj.22727</a>/li>
-											<li><b>Kushwaha N</b>, Jain N., Kumar V, Nigam K.D.P., “Numerical Study of Liquid-Liquid Two-Phase Flow through Coiled Flow Inverters: Effect of Volume Fraction, Dean Number and Orientation” Chemical Engineering Science <label style="color:rgb(55, 0, 255);"><a href = "https://doi.org/10.1016/j.ces.2022.118409">https://doi.org/10.1016/j.ces.2022.118409</a> </li>
-											
-										</ul>
-									</section>
-									<section>
-										<h3>Book Chapter</h3>
-										<ul>
-											
-											<li>Silori G.K., <b>Kushwaha N.</b>, Kumar V. (2019) “Essential Oils from Pines: Chemistry and Applications”. In: Malik S. (eds) Essential Oil Research. Springer, Cham. <label style="color:rgb(55, 0, 255);"><a href ="https://doi.org/10.1007/978-3-030-16546-8_10">https://doi.org/10.1007/978-3-030-16546-8_10</a>
-																				
-										</ul>
-									</section>
-									<section>
-									<h3>Conference</h3>
-									<ul>
-										<li>Kushwaha N, Kumar V, “Numerical Study of Saturated Pool Boiling Over Horizontal Tube”, 9th International and 49th National Conference on Fluid Mechanics and Fluid Power (FMFP 2022)</li>
-										<li>Kushwaha N, Kumar V, “Saturated Pool Boiling of Hydrogen over the Cylindrical Rod”, International conference on Chemical Engineering: Enabling Transition Towards Sustainable Future (Chemtsf 2022)</li>
-										<li>Kushwaha N, Jain N, Kumar V, Nigam KDP “Numerical Study of Liquid-Liquid Two-Phase Flow through Coiled Flow Inverters: Effect of Volume Fraction, Dean Number and Orientation” 15th International Conference on Gas-Liquid & Gas-Liquid-Solid Reactor Engineering (GLS 2022, AIChE)</li>
-										<li>Kushwaha N., Kumar V. “Numerical Simulation of Film Boiling over Sphere using Suppressed Interface Tracking Method: A Two-Phase Approach” 16th international conference on heat transfer, fluid mechanics and thermodynamics (HEFAT-2022)</li>
-										<li>Kushwaha N., Kumar V. “Numerical Simulation of Film Boiling over Sphere using Suppressed Interface Tracking Method: A Two-Phase Approach” 15th international conference on heat transfer, fluid mechanics and thermodynamics (HEFAT-2021)</li>
-										<li>Kushwaha N., Kumar V. “Thermal performance enhancement in the spiral coiled tube heat exchanger using nano-fluids” Complex Fluids Symposium 2020 (COMPFLU-2020)</li>
-									</ul>
-									</section>
-								</div>
-							</section>
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8">Fellowships & Awards</h2>
+            <div class="bg-blue-50 rounded-xl p-8 border border-blue-100">
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-award text-blue-500 mt-1 mr-3"></i>
+                        <span><strong>Mitacs Globalink Research Award</strong> (2021)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-award text-blue-500 mt-1 mr-3"></i>
+                        <span><strong>MHRD Fellowship</strong> (PhD & M.Tech), Govt. of India.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-award text-blue-500 mt-1 mr-3"></i>
+                        <span><strong>Silver Medal (AIR 2)</strong>, National Research Institute of Knowledge Development (2005).</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Things I can DO</h3>
-									<p>During my research (PhD) and industrial work, I accomplished numerous projects, Here are the some glimpes of them</p>
-									<div class="features">
-										<article>
-											<iframe src="https://www.youtube.com/embed/HRlJk3qTd00?autoplay=1&mute=1&controls=0&loop=1" width="350" height="300"></iframe>
-											<div class="inner">
-												<h4>Vortex shredding in Mixing tank</h4>
-												<p>Vortex shredding during the mixing in the tank V
-												</p>
-											</div>
-										</article>
-										<article>
-											<iframe src="https://www.youtube.com/embed/vIDjIV55KHs?autoplay=1&mute=1&controls=0&loop=1" width="350" height="300"></iframe>
-											<div class="inner">
-												<h4>Boiling over heated wire ||OpenFOAM ||CFD</h4>
-												<p>Boiling over heated wire ||OpenFOAM ||CFD
-												</p>
-											</div>
-										</article>
-										<article>
-											<iframe src="https://www.youtube.com/embed/kMbPhD0T-UU?autoplay=1&mute=1&controls=0&loop=1" width="350" height="300"></iframe>
-											<div class="inner">
-												<h4>Rheometer ||MCR 702 || Anton Par || Plate and Plate || Single Drive ||CFD</h4>
-												<p>Rheometer ||MCR 702 || Anton Par || Plate and Plate || Single Drive
-												</p>
-											</div>
-										</article>
-										<article>
-											<iframe src="https://www.youtube.com/embed/6cnPtuMGV-E?autoplay=1&mute=1&controls=0&loop=1" width="350" height="300"></iframe>
-											<div class="inner">
-												<h4>Ansys Workbench Design Modeler | Flow in a Circular Pipe</h4>
-												<p>Ansys Workbench Design Modeler | Flow in a Circular Pipe
-												</p>
-											</div>
-										</article>
-									
-									</div>
-								</div>
-							</section>
+        <section id="publications" class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 flex items-center">
+                <i class="fas fa-book mr-3 text-blue-500"></i> Publications
+            </h2>
 
-						
-					</div>
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-slate-700 mb-4 border-b border-slate-200 pb-2">Patents</h3>
+                <ul class="space-y-4 text-slate-700">
+                    <li class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
+                        <p><strong>Twisted Elliptical Tube-In-Tube Helically Coiled Heat Exchangers.</strong><br>
+                        <span class="text-sm text-slate-500">Granted: 25.01.2023 | File No: 370616-001</span></p>
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
+                        <p><strong>Method for extracting shikimic acid from Chir pine needles.</strong><br>
+                        <span class="text-sm text-slate-500">Published: 22/07/2022 | App No: 202111038776</span></p>
+                    </li>
+                </ul>
+            </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Dr. Naveen Kushwaha. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-slate-700 mb-4 border-b border-slate-200 pb-2">Selected Journal Articles</h3>
+                <div class="space-y-6">
+                    <div class="group">
+                        <a href="https://doi.org/10.1115/1.4043946" target="_blank" class="block hover:bg-slate-50 p-4 -mx-4 rounded-lg transition-colors">
+                            <h4 class="font-bold text-blue-700 group-hover:underline">Impact of Mixed Convective and Radiative Heat Transfer in Spiral-Coiled Tubes</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Kushwaha N</strong>, Vikash, Kumar V. | <em>ASME J. Heat Transfer (2019)</em></p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="https://doi.org/10.1021/acs.iecr.9b07044" target="_blank" class="block hover:bg-slate-50 p-4 -mx-4 rounded-lg transition-colors">
+                            <h4 class="font-bold text-blue-700 group-hover:underline">Heat Transfer & Fluid Flow Characteristics for Newtonian/Non-Newtonian Fluids</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Kushwaha N</strong>, Kumawat T, Nigam K, Kumar V | <em>Ind. Eng. Chem. Res. (2020)</em></p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="https://doi.org/10.1021/acs.iecr.3c02629" target="_blank" class="block hover:bg-slate-50 p-4 -mx-4 rounded-lg transition-colors">
+                            <h4 class="font-bold text-blue-700 group-hover:underline">Impact of Coil Curvature on Vapor Hydrodynamics</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Kushwaha N</strong>, Kumar V. | <em>Ind. Eng. Chem. Res. (ACS)</em></p>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="https://doi.org/10.1016/j.ces.2022.118409" target="_blank" class="block hover:bg-slate-50 p-4 -mx-4 rounded-lg transition-colors">
+                            <h4 class="font-bold text-blue-700 group-hover:underline">Liquid-Liquid Two-Phase Flow through Coiled Flow Inverters</h4>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Kushwaha N</strong>, Jain N., Kumar V, Nigam K.D.P. | <em>Chemical Engineering Science</em></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
